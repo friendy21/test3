@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Organization, OrgUser
+from organizations.models.models import Organization, OrgUser
 
 class UserCreateSerializer(serializers.ModelSerializer):
     class Meta:

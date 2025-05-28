@@ -1,8 +1,8 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import LoginSerializer
-from .services import AuthenticationService
+from authentication.serializers.serializers import LoginSerializer
+from authentication.services.services import AuthenticationService
 import logging
 
 logger = logging.getLogger(__name__)

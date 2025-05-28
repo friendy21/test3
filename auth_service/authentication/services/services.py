@@ -5,7 +5,7 @@ import hashlib
 import time
 from datetime import datetime, timedelta
 from django.conf import settings
-from .models import AuthUser
+from authentication.models.models import AuthUser
 import logging
 
 logger = logging.getLogger(__name__)

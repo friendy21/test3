@@ -4,9 +4,9 @@ from rest_framework import status
 from django.db import transaction, IntegrityError
 from django.shortcuts import get_object_or_404
 from django.core.exceptions import ValidationError
-from .models import Organization, OrgUser
-from .serializers import UserCreateSerializer, UserResponseSerializer, InternalUserSerializer
-from .permissions import ServiceTokenPermission
+from organizations.models.models import Organization, OrgUser
+from organizations.serializers.serializers import UserCreateSerializer, UserResponseSerializer, InternalUserSerializer
+from organizations.permissions import ServiceTokenPermission
 import logging
 
 logger = logging.getLogger(__name__)
